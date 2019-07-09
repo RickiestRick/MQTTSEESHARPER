@@ -1,0 +1,33 @@
+﻿<Controls:MetroWindow x:Class="MQTTSeeSharper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MQTTSeeSharper"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+                      xmlns:uc="clr-namespace:MQTTSeeSharper.Views.UC"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition  Height="37" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <uc:MenuUC  Margin="0,1,0,0" >
+            <uc:MenuUC.Effect>
+                <DropShadowEffect Opacity="0.1"/>
+            </uc:MenuUC.Effect>
+        </uc:MenuUC>
+        <uc:ConnectionUC  Grid.Row="1" Margin="8,5,0,3">
+            <uc:ConnectionUC.Effect>
+                <DropShadowEffect Opacity="0.1"/>
+            </uc:ConnectionUC.Effect>
+        </uc:ConnectionUC>
+        <uc:MainUC Grid.Row="2"  Margin="0,15,0,0">
+            <uc:MainUC.Effect>
+                <DropShadowEffect Opacity="0.2"/>
+            </uc:MainUC.Effect>
+        </uc:MainUC>
+    </Grid>
+</Controls:MetroWindow>
